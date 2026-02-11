@@ -1,8 +1,6 @@
 <template>
   <div class="h-screen">
-    <main class="h-full">
-      <NuxtPage/>
-    </main>
+    <NuxtPage/>
   </div>
 </template>
 

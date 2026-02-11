@@ -1,6 +1,6 @@
 <template>
-  <div class="uppercase h-full p-5 w-full flex">
-    <aside class="font-normal text-sm h-full w-1/4">
+  <div class="uppercase h-full p-5 w-full flex gap-20">
+    <aside class="font-normal text-sm h-full w-[23.75rem]">
       <div class="flex flex-col justify-between h-full">
         <div>
           <div class="flex items-center gap-2">
@@ -28,10 +28,10 @@
         </div>
       </div>
     </aside>
-    <main class="flex-1 flex flex-col gap-5">
-        <div>
+    <main class="flex-1 flex flex-col gap-5 min-w-0">
+        <header>
           <IconLogo/>
-        </div>
+        </header>
 
         <div class="flex-1 min-h-0">
           <img src="/background.png" alt="" class="w-full h-full object-cover"/>
