@@ -1,7 +1,7 @@
 <template>
   <AppHeader/>
 
-  <main class="px-[11.25rem] pb-[7.5rem]">
+  <main class="px-[11.25rem]">
     <div class="grid grid-cols-3 gap-x-3 gap-y-6">
       <div v-for="item in 6" :key="item" class="text-center uppercase">
         <div class="bg-[#F5F5F5] overflow-hidden p-[5.625rem] brightness-150">
