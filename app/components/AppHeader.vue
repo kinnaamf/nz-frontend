@@ -1,20 +1,22 @@
 <template>
-  <div class="absolute top-[18px] left-6">
-    <button>
-      <IconMenu/>
-    </button>
-  </div>
-  <header class="flex justify-between  items-center py-6 uppercase px-[11.25rem]">
-    <IconLogoSmall/>
+  <header class="sticky left-0 top-0 bg-white/90 backdrop-blur-md z-[100000]">
+    <div class="absolute top-[18px] left-6">
+      <button>
+        <IconMenu/>
+      </button>
+    </div>
+    <div class="flex justify-between items-center py-6 uppercase px-[11.25rem]">
+      <IconLogoSmall/>
 
-    <div class="flex gap-8">
-      <div class="flex items-center gap-2">
-        <IconBag class="h-3 w-3"/>
-        <NuxtLink to="/products">Магазин</NuxtLink>
-      </div>
-      <div class="flex items-center gap-2">
-        <IconUser class="h-3 w-3"/>
-        <NuxtLink to="/">Личный кабинет</NuxtLink>
+      <div class="flex gap-8">
+        <div class="flex items-center gap-2">
+          <IconBag class="h-3 w-3"/>
+          <NuxtLink to="/products">Магазин</NuxtLink>
+        </div>
+        <div class="flex items-center gap-2">
+          <IconUser class="h-3 w-3"/>
+          <NuxtLink to="/">Личный кабинет</NuxtLink>
+        </div>
       </div>
     </div>
   </header>
