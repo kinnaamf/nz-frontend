@@ -12,7 +12,7 @@
         </div>
         <div class="mt-4 ml-5">
           <ul>
-            <li v-for="el in topList :key="el.text"">
+            <li v-for="el in topList" :key="el.text">
               <NuxtLink :to="el.to">{{ el.text }}</NuxtLink>
             </li>
           </ul>
