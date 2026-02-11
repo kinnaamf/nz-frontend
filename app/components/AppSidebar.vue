@@ -4,7 +4,7 @@
       <div>
         <div class="flex items-center gap-2">
           <IconBag class="h-3 w-3"/>
-          <NuxtLink to="/">Магазин</NuxtLink>
+          <NuxtLink to="/products">Магазин</NuxtLink>
         </div>
         <div class="flex items-center gap-2">
           <IconUser class="h-3 w-3"/>
