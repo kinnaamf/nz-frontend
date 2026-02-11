@@ -4,7 +4,7 @@
 
     <main class="flex-1 flex flex-col gap-5 min-w-0">
       <header>
-        <IconLogo/>
+        <IconLogoHuge/>
       </header>
 
       <div class="flex-1 min-h-0">
@@ -16,7 +16,7 @@
 
 <script setup lang="ts">
 
-import IconLogo from "~/ui/IconLogo.vue";
+import IconLogoHuge from "~/ui/IconLogoHuge.vue";
 import AppSidebar from "~/components/AppSidebar.vue";
 
 </script>
