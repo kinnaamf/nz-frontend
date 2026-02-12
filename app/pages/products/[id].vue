@@ -3,9 +3,20 @@
 
   <div class="flex flex-col items-center justify-center w-full pb-[6.25rem]">
     <div class="w-max">
-      <img :src="product?.images[0]" alt="" class="aspect-square w-[35rem] h-auto brightness-150 p-16">
+      <img
+          :src="selectedImage"
+          alt=""
+          class="aspect-square w-[35rem] h-auto brightness-150 p-16"
+      >
       <div class="flex justify-evenly mt-12">
-        <img v-for="url in product?.images" :src="url" alt="" class="w-[6.875rem] h-auto aspect-square brightness-150">
+        <img
+            v-for="(url, index) in product?.images"
+            :key="index"
+            :src="url"
+            @click="selectedImage = url"
+            alt=""
+            class="w-[6.875rem] h-auto aspect-square brightness-150"
+        >
       </div>
     </div>
     <div class="mt-10">
@@ -21,7 +32,6 @@
             :class="['text-sm font-medium px-8 py-2 rounded-full transition-all',
             selectedSize === size ? 'bg-[#F5F5F5] text-black' : 'bg-white text-neutral-500',
             ]"
-
         >
           {{ size }}
         </button>
@@ -77,14 +87,18 @@ const tabs = [
 
 const selectedSize = ref<string | null>(product.value?.sizes[0] ?? null)
 const selectedTab = ref<string | null>(tabs[0].id ?? null)
+const selectedImage = ref<string>(product.value?.images[0] ?? '')
+
 const activeTabContent = computed(() => {
   return tabs.find((tab) => tab.id === selectedTab.value)?.content || ''
 })
 
 watchEffect(() => {
+  if(product.value?.images[0]) {
+    selectedImage.value = product.value?.images[0]
+  }
+
   selectedSize.value = product.value.sizes[0]
-  selectedTab.value = tabs[0]
+  selectedTab.value = tabs[0].id
 })
-
-
 </script>
