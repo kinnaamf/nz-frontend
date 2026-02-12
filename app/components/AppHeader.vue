@@ -8,7 +8,9 @@
       </button>
     </div>
     <div class="flex justify-between items-center py-6 uppercase px-[11.25rem]">
-      <IconLogoSmall/>
+      <NuxtLink :to="{ name: 'index' }">
+        <IconLogoSmall/>
+      </NuxtLink>
 
       <div class="flex gap-8">
         <div class="flex items-center gap-2">
