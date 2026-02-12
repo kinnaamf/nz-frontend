@@ -1,7 +1,7 @@
 <template>
   <AppHeader/>
 
-  <main class="px-[11.25rem]">
+  <main class="px-[11.25rem] pb-[6.25rem]">
     <div class="grid grid-cols-3 gap-x-3 gap-y-6">
       <div v-for="p in products" :key="p.id" class="text-center uppercase">
         <NuxtLink :to="{ name: 'products-id', params: { id: p.id } }">
