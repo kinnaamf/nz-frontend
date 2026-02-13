@@ -1,6 +1,6 @@
 <template>
   <div @click="$emit('close-menu')" class="fixed inset-0 w-screen h-screen bg-black/10 backdrop-blur-lg z-[1000]">
-    <div class="bg-white w-1/4 p-5 h-full" @click.stop>
+    <div class="bg-white w-[35rem] p-5 h-full" @click.stop>
       <aside class="font-normal flex flex-col gap-5 text-sm w-[23.75rem] uppercase h-full">
 
         <div class="flex items-center gap-20">
